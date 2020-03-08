@@ -1,0 +1,83 @@
+/* 最外层的div----------------- */
+.my-swiper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* div--->ul的样式----------淡入淡出 */
+/* .my-swiper-fade ul.my-swiper-list {
+    position: relative;
+} */
+
+/* div--->ul的样式-------------滑动 */
+.my-swiper-slide ul.my-swiper-list {
+    position: absolute;
+    left: 0px;
+    display: flex;
+}
+
+/* div--->ul--->li的样式---------- */
+/* .my-swiper-fade .my-swiper-list>li {
+    position: absolute;
+} */
+
+/* div--->button左右按钮的样式----------- */
+.my-swiper .my-swiper-btn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.my-swiper .my-swiper-btn.right-btn {
+    padding-left: 13px;
+    right: 0px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.my-swiper .my-swiper-btn.left-btn {
+    padding-right: 13px;
+    left: 0px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/* div--->div小圆点区域----------- */
+.my-swiper .my-swiper-spot {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    padding: 0px 5px;
+    position: absolute;
+    bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* div--->div--->span的样式---------小圆点 */
+.my-swiper .my-swiper-spot>span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0px 3px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+
+.my-swiper .my-swiper-spot>span.current {
+    background-color: #f00;
+}
+
+/* ------------------------------------------------------------ */
+/* 下面的样式为了减少设置, 都是对插入的内容的可能性进行设置 */
+/* div--->ul--->li---->动态样式------ */
+.my-swiper .my-swiper-list>li>div{
+    width: 100%;
+    height: 100%;
+}
